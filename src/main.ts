@@ -93,3 +93,18 @@ checkOpen("måndag", 17);
 
 // STEG 7 ------------------------------------------------------------
 // TODO: se README. Gissa först, kör sedan.
+
+console.log("5" + 3); // 53
+
+// @ts-expect-error
+console.log("5" - 3); // 2
+
+// @ts-expect-error
+console.log(true + 1); // 2
+
+console.log(0.1 + 0.2); // 0.3, actual output: 0.30000000000000004
+
+// @ts-expect-error
+console.log("" === 0); // false
+
+console.log(null == undefined); // true
