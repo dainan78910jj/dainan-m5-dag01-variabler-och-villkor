@@ -70,5 +70,26 @@ if (arStudent === true) {
 // TODO: avgör om kaféet är öppet (boolean): vardagar 7–18, helger 9–16
 // TODO: skriv ut "Öppet just nu: ja" eller "Öppet just nu: nej"
 
+const checkOpen = (dag: string, tid: number) => {
+  if (
+    ((dag === "måndag" ||
+      dag === "tisdag" ||
+      dag === "onsdag" ||
+      dag === "torsdag" ||
+      dag === "fredag") &&
+      tid >= 7 &&
+      tid <= 18) ||
+    ((dag === "lördag" || dag === "söndag") && tid >= 9 && tid <= 16)
+  ) {
+    console.log(`Öppet just nu: ja (${dag} ${tid})`);
+  } else {
+    console.log(`Öppet just nu: nej (${dag} ${tid})`);
+  }
+};
+
+checkOpen("lördag", 8);
+checkOpen("lördag", 15);
+checkOpen("måndag", 17);
+
 // STEG 7 ------------------------------------------------------------
 // TODO: se README. Gissa först, kör sedan.
