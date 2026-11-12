@@ -62,7 +62,7 @@ const arStudent: boolean = true;
 
 if (arStudent === true) {
   summa *= 0.9;
-  console.log(`Att betala`);
+  console.log(`Att betala: ${summa} kr`);
 }
 
 // STEG 6 ------------------------------------------------------------
