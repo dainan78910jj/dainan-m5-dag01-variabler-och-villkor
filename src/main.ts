@@ -30,6 +30,18 @@ console.log(kafeName);
 // TODO: skriv ut typeof för alla fem på en rad (tips: separera med komma)
 // TODO: prova att ge number-variabeln en text. Vad säger TypeScript?
 
+const str: string = "Hello world";
+let num: number = 88;
+const bool: boolean = true;
+let udf: undefined;
+let nul: null = null;
+
+console.log(typeof str); //string
+console.log(typeof num); // number
+console.log(typeof bool); // boolean
+console.log(typeof udf); // undefined
+console.log(typeof nul); // object
+
 // STEG 4 ------------------------------------------------------------
 // TODO: räkna ut summa = antalBullar * prisBulle + antalKaffe * prisKaffe
 // TODO: räkna ut momsDel (12 % ingår i priset): summa * 0.12 / 1.12
